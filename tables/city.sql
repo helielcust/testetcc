@@ -1,10 +1,7 @@
 CREATE TABLE `city` (
   `city_id` smallint unsigned NOT NULL AUTO_INCREMENT,
-  `city` varchar(90) NOT NULL,
-  `teste` varchar(255) DEFAULT NULL,
-  `description` varchar(255) DEFAULT NULL,
+  `city` varchar(60) NOT NULL,
   `country_id` smallint unsigned NOT NULL,
-  `population` int unsigned DEFAULT NULL,
   `last_update` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`city_id`),
   KEY `idx_fk_country_id` (`country_id`),
